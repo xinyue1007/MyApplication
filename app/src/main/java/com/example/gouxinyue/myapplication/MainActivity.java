@@ -81,10 +81,13 @@ public class MainActivity extends Activity {
     private void initViewpage(){
         mPager = (ViewPager) findViewById(R.id.viewpager);
         final ArrayList<View> list = new ArrayList<View>();
-        Intent intent = new Intent(mContext, TestActivity2.class);
-        list.add(getView("TestActivity2", intent));
-        Intent intent1 = new Intent(mContext, TestActivity3.class);
-        list.add(getView("TestActivity3", intent1));
+        Intent intent = new Intent(mContext, TestActivity.class);
+        list.add(getView("TestActivity", intent));
+
+        Intent intent3 = new Intent(mContext, TestActivity3.class);
+        list.add(getView("TestActivity3", intent3));
+        Intent intent2 = new Intent(mContext, TestActivity2.class);
+        list.add(getView("TestActivity2", intent2));
         mPager.setAdapter(new MyPagerAdapter(list));
         mPager.setCurrentItem(0);
         mPager.setOnPageChangeListener(new MyOnPageChangeListener());
