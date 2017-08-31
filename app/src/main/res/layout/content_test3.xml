@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/content_test3a"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.gouxinyue.myapplication.TestActivity3"
     tools:showIn="@layout/activity_test3">
@@ -16,8 +17,8 @@
         tools:layout_editor_absoluteY="0dp"
         />
     <com.example.gouxinyue.myapplication.MyView3
-        android:id="@+id/myview3xx"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:id="@+id/caocao"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
 
 </android.support.constraint.ConstraintLayout>

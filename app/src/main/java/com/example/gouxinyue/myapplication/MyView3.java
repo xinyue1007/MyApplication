@@ -8,6 +8,7 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import java.util.Random;
@@ -75,9 +76,10 @@ public class MyView3 extends View {
 
     }
 
-    public MyView3(Context context,  AttributeSet attrs) {
-        this(context);
+    public MyView3(Context context, @Nullable AttributeSet attrs) {
+        super(context,attrs);
     }
+
     public void setOrientation(){
 
         mOrientation[0]=num[mRandom.nextInt(4)];
@@ -93,6 +95,8 @@ public class MyView3 extends View {
 
         int w = getWidth();
         int h = getHeight();
+        Log.v("xxxx", "width = " + w);
+        Log.v("xxxx", "height = " + h);
         int cx = w / 2;
         int cy = h / 2;
 
